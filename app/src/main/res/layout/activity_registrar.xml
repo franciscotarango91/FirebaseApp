@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrarActivity"
+    android:background="@color/colorPrimaryDark">
+
+    <LinearLayout
+        android:layout_marginLeft="2mm"
+        android:layout_marginRight="2mm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginTop="2mm"
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="32mm"
+            android:src="@drawable/ea"
+            android:background="@color/colorPrimaryDark"/>
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorAccent"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/f91"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Fifa 21"
+                    android:textColor="#fff"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/easports"></TextView>
+
+                <TextView
+                    android:id="@+id/f92"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/f91"
+                    android:layout_margin="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:text="Campeon: "
+                    android:textColor="#fff"></TextView>
+
+                <TextView
+                    android:id="@+id/a3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/f92"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:paddingTop="30dp"
+                    android:text="Subcampeon:"
+                    android:textColor="#fff"></TextView>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="15dp"
+                    android:maxHeight="100dp"
+                    android:src="@mipmap/inter">
+
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:maxHeight="100dp"
+                    android:src="@mipmap/bayern"></ImageView>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:layout_marginTop="5mm"
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save"
+            android:background="@color/colorAccent"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+</LinearLayout>
